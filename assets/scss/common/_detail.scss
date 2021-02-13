@@ -1,0 +1,47 @@
+#user_detail_top{
+    background-color:$bg_color;
+    text-align: center;
+    padding:12px 0px;
+    img{
+        width: 40%;
+        height: auto;
+        margin: 2% 30%;
+        @include r;  
+    }
+    p{
+        font-weight: bold;
+        padding:10px 0px;
+
+    }
+}
+
+
+
+#user_detail_block{
+    // display: flex;
+    // margin: 1% 2%;
+    padding: 1% 2%;
+    background-color: #fff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    // position: relative;
+    img{
+        // position:absolute;
+        width: 80%;
+        height: auto;
+        margin: 2% 10%;
+        @include r;  
+
+    }
+
+    label{
+
+    }
+
+}
+
+.food_detail_block{ 
+
+}

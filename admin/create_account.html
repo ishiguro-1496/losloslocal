@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript">
+    $(function() {
+      $('#search_block').hide();
+      $('#search_text').on('click',function()
+      {
+        $('#search_block').slideToggle(400)
+        });
+      
+      $("#footer").load("footer.html");
+
+      });
+  </script>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+<!--   <div id="header">
+    <div id="header_left">
+      <a href="#">
+        <h1></h1>
+      </a>
+    </div>
+  </div> -->
+
+  <div id="login_box">
+    <h1>SignUp</h1>
+    <div>
+      <label for="username">名前</label>
+      <input type="text" title="username" placeholder="山田太郎" />
+    </div>
+    <div>
+      <label for="email">メールアドレス</label>
+      <input type="text" title="email" placeholder="xxxx@gmail.com" />
+    </div>
+    <div>
+      <label for="passwordinput">パスワード</label>
+      <input type="password" title="password" placeholder="xxxxxxxx(6文字以上)" />
+    </div>
+    <div>
+      <label for="passwordinput">パスワード(確認用)</label>
+      <input type="password" title="password" placeholder="xxxxxxxx(6文字以上)" />
+    </div>
+    <div>
+      <label for="text">アイコン</label>
+      <input id="filebutton"  class="input-file" type="file">
+    </div>
+    <button onclick="location.href='login.html'" class="create_account_btn btn">登録</button>
+  </div>
+
+
+
+  <!-- フッター -->
+    <div id="footer">
+    </div>
+</body>
+</html>

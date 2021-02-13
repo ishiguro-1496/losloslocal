@@ -1,0 +1,290 @@
+// 入力ページのパーツ
+
+.form_area{
+    width: 100%;
+    fieldset{
+        width: 100%;
+    }
+    
+}
+
+.form_block {
+    margin: 30px 0px;
+    display: flex;
+    align-items:center;
+    label{
+        flex-basis: 20%;
+        margin-right:4%;
+        font-size:14px;
+        position: relative;
+    }
+    div{
+        position:relative;
+    }
+    img{
+        width:80%;
+        height: auto;
+    }
+}
+
+
+
+.form_input {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    &::placeholder{
+        color: $midgray;
+        font-size:12px;
+
+    }
+}
+
+.required::after {
+  content: "*";
+  color: red;
+}
+
+.help-block {
+    display: block;
+    margin-top: 6px;
+    color: $midgray;
+    font-size:12px;
+}
+
+
+.form_wd_1 {
+    width: 10%;
+}
+
+.form_wd_2 {
+    width: 20%;
+}
+
+.form_wd_3 {
+    width: 30%;
+}
+
+.form_wd_4 {
+    width: 40%;
+}
+
+.form_wd_5 {
+    width: 50%;
+}
+
+.form_wd_6 {
+    width: 60%;
+}
+
+.form_wd_7 {
+    width: 70%;
+}
+
+.form_wd_8 {
+    width: 80%;
+}
+
+.form_wd_9 {
+    width: 90%;
+}
+
+
+
+.checkbox-inline{
+    margin-right: 24px;
+    padding:14px 0px;
+    // display: flex;
+}
+
+#textarea{
+    margin-bottom: 20px;
+    height: 140px;
+}
+#form-inline{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#unit{
+    margin: 0px 8px;
+    width: 100px
+
+}
+
+.input_inline{
+    display: flex;
+    align-items:center;
+}
+
+
+
+#section{
+    @include shadow;
+    border-radius: 10px;
+    padding:2%;
+    margin-top:20px;
+    overflow: hidden;
+    background-color:$white;
+    h2{
+        padding:0 0 1% 0;
+        border-bottom:dashed $gray 1px;
+    }
+}
+
+
+// 確認系
+
+
+.form_data{
+    padding:10px 0px;
+    font-size: 14px;
+}
+
+#detail_text{
+
+}
+
+#detail_link{
+    color:$purple;
+    text-decoration: none;
+}
+
+
+// チャット
+
+#message_area{
+    overflow: scroll;
+    height: 400px;
+}
+
+.message_box {
+  position: relative;
+  overflow: hidden;
+}
+
+.message_icon {
+  position: absolute;
+  top: 0; 
+  width: 54px; 
+  height: 54px; 
+  img{
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    border-radius: 50%; 
+    border: 2px solid $gray; 
+  }
+}
+
+.message_icon-left {
+  left: 0; 
+}
+.message_icon-right {
+  right: 0;
+}
+
+.message_username {
+  position: absolute;
+  width: 54px;
+  text-align: center;
+  top: 58px;
+  color: #777;
+  font-size: 10px;
+}
+
+.message_username-left {
+  left: 0;
+}
+
+.message_username-right {
+  right: 0;
+}
+
+.message_side {
+  position: relative;
+  float: left;
+  margin: 0 90px 36px 90px;
+}
+.message_side-right {
+  float: right;
+}
+
+.message_txt {
+  position: relative;
+  border: 2px solid $main_color;
+  border-radius: 6px; 
+  background: $white; 
+  color: #333; 
+  font-size: 12px;
+  line-height: 1.7;
+  padding: 10px; 
+}
+.message_txt > p:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0; 
+}
+
+.message_txt:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  top: 16px;
+  z-index: 3;
+}
+.message_txt:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  top: 15px;
+  z-index: 2;
+}
+
+.message_txt-left:before {
+  left: -7px;
+  border-width: 7px 10px 7px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.message_txt-left:after {
+  left: -10px;
+  border-width: 8px 10px 8px 0;
+  border-color: transparent $main_color transparent transparent;
+}
+
+.message_txt-right:before {
+  right: -7px;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent $white;
+}
+.message_txt-right:after {
+  right: -10px;
+  border-width: 8px 0 8px 10px;
+  border-color: transparent transparent transparent $main_color;
+}
+
+
+
+
+// グラフ
+
+.graph{
+  width:90%; 
+  height:300px; 
+  margin: auto 0;
+  overflow-x:scroll;
+}
+
+
+

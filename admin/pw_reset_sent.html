@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript">
+    $(function() {
+      $('#search_block').hide();
+      $('#search_text').on('click',function()
+      {
+        $('#search_block').slideToggle(400)
+        });
+      
+      $("#footer").load("footer.html");
+
+      });
+  </script>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+<!--   <div id="header">
+    <div id="header_left">
+      <a href="#">
+        <h1></h1>
+      </a>
+    </div>
+  </div> -->
+
+  <div id="login_box">
+  	<h1>Password Reset</h1>
+    <div>
+      <h2>パスワード再設定用のメールを送信しました。<br>メールからパスワードの再設定を行ってください。</h2>
+    </div>
+  
+    <button onclick="location.href='login.html'" name="singlebutton" class="login_btn btn">ログイン画面へ</button>
+  </div>
+
+
+
+	<!-- フッター -->
+    <div id="footer">
+    </div>
+</body>
+</html>

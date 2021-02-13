@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/admin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</head>
+<body>
+
+  <div id="container">
+    <div id="sidebar"></div>
+
+    <!-- メイン -->
+    <div id="main"> 
+      <div id="header"></div>
+      <h1 id="page_title">お題一覧</h1>
+
+      <div id="btn_block">
+        <button onclick="location.href='work_create.html'" class="create_btn shadow_btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        新規作成
+        </button>
+        <button id="search_text" class="search_btn shadow_btn">
+          <img src="../assets/img/search_tab.svg">
+          <p>お題検索</p>
+        </button>
+      </div>
+      <!-- btn_block -->
+
+
+      <div id="search_block">
+        <form>
+          <div id="search_box">
+            <label>お題名</label>
+            <div class="search_two_row">
+              <input class="form_input search_half">
+              <select class="form_input search_half">
+                <option value="">が含まれる</option>
+                <option value="">等しい</option>
+                <option value="">で始まる</option>
+                <option value="">で終わる</option>
+              </select>
+            </div>
+          </div>
+          <div id="search_box">
+            <label>対応ステータス</label>
+            <div>
+              <select class="form_input search_half">
+                <option value="">未対応</option>
+                <option value="">対応済み</option>
+              </select>
+            </div>
+          </div>
+          <div id="search_box">
+            <label>更新日時</label>
+            <div>
+              <select class="form_input search_half">
+                <option value="">昇順</option>
+                <option value="">降順</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <div id="search_button">
+          <button onclick="location.href='#'" class="search_btn shadow_btn">絞り込む</button>
+          <button onclick="location.href='#'" class="reset_btn shadow_btn">リセット</button>
+        </div>
+      </div>
+      <!-- search_block -->
+
+
+
+      <table class="flex-table scroll_10" id="list_scroll">
+        <thead>
+            <tr>
+                <th class="table_20">操作</th>
+                <th class="table_30">お題タイトル</th>
+                <th class="table_15">対応ユーザー</th>
+                <th class="table_15">対応ステータス</th>
+                <th class="table_10">更新日時</th>
+                <th class="table_10">id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="操作" class="table_20">
+                  <div id="list_btn_block">
+                    <button onclick="location.href='work_detail.html'" id="list_btn">
+                      詳細
+                    </button>
+                    <button onclick="location.href='work_edit.html'" id="list_btn">
+                      編集
+                    </button>
+                    <button onclick="location.href='work_approve.html'" id="list_btn">
+                      承認
+                    </button>
+                  </div>
+                </td>
+                <td data-label="お題タイトル" class="table_30">
+                  お題タイトルがここに入ります。お題タイトルがここに入ります。
+                </td>
+                <td data-label="対応ユーザー" class="table_15">
+                  <a href="user_detail.html" id="list_link">山田太郎</a>
+                </td>
+                <td data-label="対応ステータス" class="table_15">
+                  対応済み
+                </td>
+                
+                <td data-label="更新日時" class="table_10">
+                  2020/09/29 20:57
+                </td>
+                <td data-label="id" class="table_10"> 
+                  1 
+                </td>
+            </tr>
+            <tr>
+                <td data-label="操作" class="table_20">
+                  <div id="list_btn_block">
+                    <button onclick="location.href='work_detail.html'" id="list_btn">
+                      詳細
+                    </button>
+                    <button onclick="location.href='work_edit.html'" id="list_btn">
+                      編集
+                    </button>
+                    <button onclick="location.href='work_approve.html'" id="list_btn">
+                      承認
+                    </button>
+                  </div>
+                </td>
+                <td data-label="お題タイトル" class="table_30">
+                  お題タイトルがここに入ります。お題タイトルがここに入ります。
+                </td>
+                <td data-label="対応ユーザー" class="table_15">
+                  <a href="user_detail.html" id="list_link">山田太郎</a>
+                </td>
+                <td data-label="対応ステータス" class="table_15">
+                  対応済み
+                </td>
+                
+                <td data-label="更新日時" class="table_10">
+                  2020/09/29 20:57
+                </td>
+                <td data-label="id" class="table_10"> 
+                  1 
+                </td>
+            </tr>
+            <tr>
+                <td data-label="操作" class="table_20">
+                  <div id="list_btn_block">
+                    <button onclick="location.href='work_detail.html'" id="list_btn">
+                      詳細
+                    </button>
+                    <button onclick="location.href='work_edit.html'" id="list_btn">
+                      編集
+                    </button>
+                    <button onclick="location.href='work_approve.html'" id="list_btn">
+                      承認
+                    </button>
+                  </div>
+                </td>
+                <td data-label="お題タイトル" class="table_30">
+                  お題タイトルがここに入ります。お題タイトルがここに入ります。
+                </td>
+                <td data-label="対応ユーザー" class="table_15">
+                  <a href="user_detail.html" id="list_link">山田太郎</a>
+                </td>
+                <td data-label="対応ステータス" class="table_15">
+                  対応済み
+                </td>
+                
+                <td data-label="更新日時" class="table_10">
+                  2020/09/29 20:57
+                </td>
+                <td data-label="id" class="table_10"> 
+                  1 
+                </td>
+            </tr>
+            <tr>
+                <td data-label="操作" class="table_20">
+                  <div id="list_btn_block">
+                    <button onclick="location.href='work_detail.html'" id="list_btn">
+                      詳細
+                    </button>
+                    <button onclick="location.href='work_edit.html'" id="list_btn">
+                      編集
+                    </button>
+                    <button onclick="location.href='work_approve.html'" id="list_btn">
+                      承認
+                    </button>
+                  </div>
+                </td>
+                <td data-label="お題タイトル" class="table_30">
+                  お題タイトルがここに入ります。お題タイトルがここに入ります。
+                </td>
+                <td data-label="対応ユーザー" class="table_15">
+                  <a href="user_detail.html" id="list_link">山田太郎</a>
+                </td>
+                <td data-label="対応ステータス" class="table_15">
+                  対応済み
+                </td>
+                
+                <td data-label="更新日時" class="table_10">
+                  2020/09/29 20:57
+                </td>
+                <td data-label="id" class="table_10"> 
+                  1 
+                </td>
+            </tr>
+            
+        </tbody>
+      </table>
+      <!-- flex_table -->
+      
+      <nav class="pg_navi">
+        <div class="pagination">
+          <a class="pg_number prev" href="#">prev</a>
+          <span aria-current="page" class="pg_number current">1</span>
+          <a class="pg_number" href="#">2</a>
+          <a class="pg_number" href="#">3</a>
+          <a class="pg_number" href="#">4</a>
+          <a class="pg_number" href="#">5</a>
+          <a class="pg_number" href="#">6</a>
+          <a class="pg_number next" href="#">next</a>
+        </div>
+      </nav>
+      <!-- pg_navi -->
+      <div id="footer"></div>
+    </div>
+    <!-- main -->
+  </div>
+  <!-- container -->
+
+</body>
+</html>

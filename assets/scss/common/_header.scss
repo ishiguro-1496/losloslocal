@@ -1,0 +1,200 @@
+#header{
+	width: 96%;
+  padding: 0 2%;
+	display: flex;
+	position: sticky;
+	top:0;
+	z-index: 1000;
+	background-color: $lightgray;
+	justify-content: space-between;
+  align-items:center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px;
+	a{
+		text-decoration:none;
+
+	}
+	img{
+
+	}
+
+}
+
+
+.menu_btn {
+  position:relative;
+  width: 60px;
+  height: 60px;
+  ul{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    list-style: none;
+    li{
+      height: 4px;
+      width:90%;
+      margin: 6px auto;
+      background-color:$main_color;
+    }
+  }
+}
+
+
+// .menu_btn_middle{
+//   top:10px;
+//   &::before{
+//     top: -10px;
+//   }
+
+// }
+
+#header_left{
+	flex-basis: 20%;
+  display: flex;
+  vertical-align: middle;
+  h1{
+    color: $white;
+    padding:24px 0px;
+    font-size:20px;
+  }
+}
+
+#header_center{
+	flex-basis:60%;
+	padding:0% 1%;
+	text-align: center;
+  a{
+      h1{
+      color:$white;
+      text-decoration-line: none;
+      font-size:20px;
+      padding: 24px 0;
+      font-weight: bold;
+    }
+    img{
+      width:20%;
+      height: auto;
+    }
+  }
+}
+
+
+#header_right{
+	flex-basis:20%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	a{
+    display: flex;
+    align-items: center;
+    p{
+      text-decoration:none;
+      color:$main_color;
+    }
+    // img{
+    //   width: 30px;
+    //   margin-right: 10px;
+    //   height: 30px;
+    //   border-radius:50%;
+    // }
+    span
+    {
+      background-image:url("../img/icon_7.jpeg");
+      width: 30px;
+      margin-right: 16px;
+      height: 30px;
+      border-radius:50%;
+      background-position: center;
+      background-size:cover;
+    }
+	}
+}
+
+#profile_icon{
+  display: none;
+}
+
+
+// ーーーーーーUser側ーーーーーー
+
+
+#header_logout{
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top:0;
+  background-color: $bg_color;
+  justify-content: space-between;
+  align-items:center;
+
+}
+
+#header_logout_left{
+  flex-basis:20%;
+  a{
+    display: flex;
+    text-decoration: none;
+    p{
+      
+    }
+
+
+  }
+}
+
+#header_logout_center{
+  flex-basis:50%;
+  a{
+    display: flex;
+    text-decoration: none;
+    p{
+      
+    }
+
+
+  }
+
+}
+
+
+
+#header_logout_right{
+  flex-basis:30%;
+  a{
+    display: flex;
+    text-decoration: none;
+    align-items:center;
+    justify-content: flex-end;
+    p{
+      font-size: 12px;
+      color:$blue;
+      padding:14px 10px;
+
+    }
+
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

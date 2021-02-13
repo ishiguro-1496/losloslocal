@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript">
+    $(function() {
+      $('#search_block').hide();
+      $('#search_text').on('click',function()
+      {
+        $('#search_block').slideToggle(400)
+        });
+      
+
+      $("#footer").load("footer.html");
+
+      });
+  </script>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+<!--   <div id="header">
+    <div id="header_left">
+      <a href="#">
+        <h1></h1>
+      </a>
+    </div>
+  </div> -->
+
+  <div id="login_box">
+  	<h1>Login</h1>
+  	<div>
+      <label for="email">メールアドレス</label>
+      <input type="text" title="email" placeholder="xxxx@gmail.com" />
+    </div>
+    <div>
+      <label for="passwordinput">パスワード</label>
+      <input type="password" title="password" placeholder="xxxxxxxx(6文字以上)" />
+    </div>
+    <button onclick="location.href='index.html'" name="singlebutton" class="login_btn btn">ログイン</button>
+    <p>
+    	<a href="pw_reset.html">
+    		パスワードを忘れた場合
+    	</a>
+    </p>
+    <p>
+    	<a href="create_account.html">
+    		アカウント新規登録
+    	</a>
+    </p>
+  </div>
+
+
+
+	<!-- フッター -->
+    <div id="footer">
+    </div>
+</body>
+</html>

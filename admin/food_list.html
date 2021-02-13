@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/admin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</head>
+<body>
+
+  <div id="container">
+    <div id="sidebar"></div>
+
+    <!-- メイン -->
+    <div id="main"> 
+      <div id="header"></div>
+      <h1 id="page_title">フード一覧</h1>
+
+      <div id="btn_block">
+        <button id="search_text" class="search_btn shadow_btn">
+          <img src="../assets/img/search_tab.svg">
+          <p>フード検索</p>
+        </button>
+      </div>
+      <!-- btn_block -->
+      <div id="search_block">
+        <form>
+          <div id="search_box">
+            <label>フード名</label>
+            <div class="search_two_row">
+              <input class="form_input search_half">
+              <select class="form_input search_half">
+                <option value="">が含まれる</option>
+                <option value="">等しい</option>
+                <option value="">で始まる</option>
+                <option value="">で終わる</option>
+              </select>
+            </div>
+          </div>
+          <div id="search_box">
+            <label>メールアドレス</label>
+            <div class="search_two_row">
+              <input class="form_input search_half">
+              <select class="form_input search_half">
+                <option value="">が含まれる</option>
+                <option value="">等しい</option>
+                <option value="">で始まる</option>
+                <option value="">で終わる</option>
+              </select>
+            </div>
+          </div>
+          <div id="search_box">
+            <label>フード承認ステータス</label>
+            <div>
+              <select class="form_input search_half">
+                <option value="">未承認</option>
+                <option value="">承認済み</option>
+                <option value="">非承認</option>
+              </select>
+            </div>
+          </div>
+          <div id="search_box">
+            <label>フード公開ステータス</label>
+            <div>
+              <select class="form_input search_half">
+                <option value="">公開中</option>
+                <option value="">非公開</option>
+              </select>
+            </div>
+          </div>
+          <div id="search_box">
+            <label>更新日時</label>
+            <div>
+              <select class="form_input search_half">
+                <option value="">昇順</option>
+                <option value="">降順</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <div id="search_button">
+          <button onclick="location.href='#'" class="search_btn shadow_btn">絞り込む</button>
+          <button onclick="location.href='#'" class="reset_btn shadow_btn">リセット</button>
+        </div>
+      </div>
+      <!-- search_block -->
+
+
+
+      <table class="flex-table scroll_07" id="list_scroll">
+        <thead>
+            <tr>
+                <th class="table_10">操作</th>
+                <th class="table_10">フード名</th>
+                <th class="table_10">必要ポイント数</th>
+                <th class="table_10">フード提供者名</th>
+                <th class="table_10">フード承認ステータス</th>
+                <th class="table_10">フード公開ステータス</th>
+                <th class="table_10">倉庫</th>
+                <th class="table_25">メモ</th>
+                <th class="table_10">更新日時</th>
+                <th class="table_5">id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="操作" class="table_10">
+                  <div>
+                    <button onclick="location.href='food_detail.html'" id="list_btn">
+                      詳細
+                    </button>
+                  </div>
+                </td>
+                <td data-label="フード名" class="table_10">
+                  ハンバーガー
+                </td>
+                <td data-label="必要ポイント数" class="table_10">
+                  200pt
+                </td>
+                <td data-label="フード提供者名" class="table_10">
+                  <a href="supplier_detail.html" id="list_link">フードロス株式会社</a>
+                </td>
+                <td data-label="フード承認ステータス" class="table_10">
+                  承認待ち
+                </td>
+                <td data-label="フード公開ステータス" class="table_10">
+                  非公開
+                </td>
+                <td data-label="倉庫" class="table_10">
+                  <a href="warehouse_detail.html" id="list_link">〇〇倉庫</a>
+                </td>
+                <td data-label="メモ" class="table_25">
+                  内部メモがここに入ります。内部メモがここに入ります。内部メモがここに入ります。内部メモがここに入ります。
+                </td>
+                <td data-label="更新日時" class="table_10">
+                  2020/09/29 20:57
+                </td>
+                <td data-label="id" class="table_5"> 
+                  1 
+                </td>
+            </tr>
+            <tr>
+                <td data-label="操作" class="table_10">
+                  <div>
+                    <button onclick="location.href='food_detail.html'" id="list_btn">
+                      詳細
+                    </button>
+                  </div>
+                </td>
+                <td data-label="フード名" class="table_10">
+                  ハンバーガー
+                </td>
+                <td data-label="必要ポイント数" class="table_10">
+                  200pt
+                </td>
+                <td data-label="フード提供者名" class="table_10">
+                  <a href="supplier_detail.html" id="list_link">フードロス株式会社</a>
+                </td>
+                <td data-label="フード承認ステータス" class="table_10">
+                  承認待ち
+                </td>
+                <td data-label="フード公開ステータス" class="table_10">
+                  非公開
+                </td>
+                <td data-label="倉庫" class="table_10">
+                -                
+                </td>
+                <td data-label="メモ" class="table_25">
+                  内部メモがここに入ります。内部メモがここに入ります。内部メモがここに入ります。内部メモがここに入ります。
+                </td>
+                <td data-label="更新日時" class="table_10">
+                  2020/09/29 20:57
+                </td>
+                <td data-label="id" class="table_5"> 
+                  1 
+                </td>
+            </tr>
+            <tr>
+                <td data-label="操作" class="table_10">
+                  <div>
+                    <button onclick="location.href='food_detail.html'" id="list_btn">
+                      詳細
+                    </button>
+                  </div>
+                </td>
+                <td data-label="フード名" class="table_10">
+                  ハンバーガー
+                </td>
+                <td data-label="必要ポイント数" class="table_10">
+                  200pt
+                </td>
+                <td data-label="フード提供者名" class="table_10">
+                  <a href="supplier_detail.html" id="list_link">フードロス株式会社</a>
+                </td>
+                <td data-label="フード承認ステータス" class="table_10">
+                  承認待ち
+                </td>
+                <td data-label="フード公開ステータス" class="table_10">
+                  非公開
+                </td>
+                <td data-label="倉庫" class="table_10">
+                  -
+                </td>
+                <td data-label="メモ" class="table_25">
+                  内部メモがここに入ります。内部メモがここに入ります。内部メモがここに入ります。内部メモがここに入ります。
+                </td>
+                <td data-label="更新日時" class="table_10">
+                  2020/09/29 20:57
+                </td>
+                <td data-label="id" class="table_5"> 
+                  1 
+                </td>
+            </tr>
+        </tbody>
+      </table>
+      <!-- flex_table -->
+      
+      <nav class="pg_navi">
+        <div class="pagination">
+          <a class="pg_number prev" href="#">prev</a>
+          <span aria-current="page" class="pg_number current">1</span>
+          <a class="pg_number" href="#">2</a>
+          <a class="pg_number" href="#">3</a>
+          <a class="pg_number" href="#">4</a>
+          <a class="pg_number" href="#">5</a>
+          <a class="pg_number" href="#">6</a>
+          <a class="pg_number next" href="#">next</a>
+        </div>
+      </nav>
+      <!-- pg_navi -->
+      <div id="footer"></div>
+    </div>
+    <!-- main -->
+  </div>
+  <!-- container -->
+
+</body>
+</html>

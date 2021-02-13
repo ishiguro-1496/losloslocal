@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/admin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</head>
+<body>
+
+  <div id="container">
+    <div id="sidebar"></div>
+
+    <!-- メイン -->
+    <div id="main"> 
+      <div id="header"></div>
+      <h1 id="page_title">売り上げ登録</h1>
+      <div id="main_contents">
+          <form class="form_area">
+            <fieldset>
+              <div class="form_block">
+                <label class="form_label required">年月</label>
+                <div class="form_wd_3 input_inline">
+                <input type="text" placeholder="" class="form_input" required=""><span id="unit">年</span>
+                <input type="text" placeholder="" class="form_input" required=""><span id="unit">月</span>
+                </div>
+              </div>
+              <div class="form_block">
+                <label class="form_label required">売り上げ額</label>
+                <div class="form_wd_3 input_inline">
+                <input type="text" placeholder="" class="form_input" required=""><span id="unit">万円</span>
+                </div>
+              </div>
+              <div class="form_block">
+                <div class="form_wd_4">
+                  <span onclick="history.back()" class="back_btn" type="button">戻る</span>
+                  <button class="register_btn btn" type="button">登録</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+      </div>
+      <!-- main_contents -->
+
+      <div id="footer"></div>
+    </div>
+    <!-- main -->
+  </div>
+  <!-- container -->
+
+</body>
+</html>

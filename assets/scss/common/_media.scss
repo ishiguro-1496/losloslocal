@@ -1,0 +1,310 @@
+@media screen and (max-width: 760px){
+
+    #container{
+      position:relative;
+    }
+
+
+    #main_contents{
+      width: 88%;
+      margin: 0 4% 0 4%;
+
+      background-color: $white;
+    }
+
+    #header{
+      z-index: 10;
+
+    }
+
+
+    #header_right{
+      a{
+         font-size: 6px;
+         p{
+          display: none;
+         }
+         span{
+          margin-right: 0px;
+         }
+      }
+      // img{
+      //   width: 24px;
+      //   height: auto;
+      // }
+    } 
+    #profile{
+        display: none;
+      }
+    #profile_icon{
+      display: block;
+      }   
+    #sp_menu{
+      display: block;
+    }
+
+    #dashboard_block{
+        flex-direction: column;
+    }
+
+    #dashboard_search{
+    input{
+        flex-basis: 32%;
+      }
+    }
+    #dashboard_box{
+      margin:2%;
+      a{
+        div{
+          padding:6px 2px;
+        }
+      }
+    }
+
+
+  // 一覧ページ
+
+
+    .flex-table{
+
+      padding:4% 4%;
+      // thead{
+      //   display: none;
+      // }
+
+      // tbody{
+      //   width: 100%;
+      //   tr{
+      //     display: block;
+      //     padding:16px 0px;
+
+      //     td{
+      //         padding:0px ;
+      //         width: 100%; 
+      //         position:relative;
+      //         justify-content: start;
+      //         flex-wrap: nowrap;  
+      //         display: flex; 
+      //         &::before{
+      //           // position:absolute;
+      //           left: 0;
+      //           height: 100%;
+      //           content: attr(data-label);
+      //           float: left;
+      //           font-weight: bold;
+      //           margin-right: 20px;
+      //           width: 20%;
+      //           background-color:$main_color;
+      //           color:$white;
+      //           padding: 14px 20px;  
+      //           flex-shrink: 0;   
+      //         }
+      //         img{
+      //             width: 54px;
+      //             height:36px;
+      //           } 
+      //     }
+      //   }
+
+      // }
+    }
+    #list_scroll{
+    display:flex;
+    overflow-x:scroll;
+      thead{
+          flex:0 0 auto;
+          width: calc(100% / 0.4);
+      }
+      tbody{
+          flex:0 0 auto;
+          width: calc(100% / 0.4);
+      }
+    } 
+
+    // #list_img{
+    //   width: 60px;
+    //   height:auto;
+    // }
+
+    #list_icon{
+      width: 20px;
+      height:auto;
+    }
+
+    #btn_block{
+    button{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin: 10px 16px 0 0;
+      }
+    }
+
+    #list_btn_block{
+    button{
+        margin: 2px 10px 2px 0px;
+    }
+}
+
+
+    #search_block{
+      form{
+        display: block;
+      }
+    }
+
+    #search_box{
+      width: 100%;
+    }
+
+    #search_text{
+      margin:10px 0px 0px 0px;
+      // width: 80%;
+    }
+
+    // ページネーション
+
+.pg_navi .pg_number {
+    display: none;
+    border-radius: 50%;
+    }
+    .pg_navi .pg_number:nth-of-type(2) {
+    position: relative;
+    padding-right: 20px;
+    }
+    .pg_navi .pg_number:nth-of-type(2)::after {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    content: '...';
+    }
+    .pg_navi .pg_number:nth-child(-n+3),
+    .pg_navi .pg_number:nth-last-child(-n+3) {
+        display: block;
+    }
+    .pg_navi .pg_number:nth-last-child(-n+4) {
+        padding: 0 5px;
+    }
+    .pg_navi .pg_number:nth-last-child(-n+4)::after {
+        content: none;
+    }
+    .pg_navi .pg_number:hover,
+    .pg_navi .pg_number.current {
+        border-radius: 50%;
+    }
+    .pg_navi .pg_number.prev:hover,
+    .pg_navi .pg_number.next:hover {
+        border-radius: 50%;
+    }
+
+
+    // 入力ページ
+
+    .form_block{
+        display: block;
+        label{
+          display: inline-block;
+          margin-bottom: 10px;
+          // font-weight: bold;
+          border-left:4px solid $purple;
+          padding-left:4px;
+
+        }
+    }
+
+
+    .form_wd_1 {
+        width: 60%;
+    }
+
+    .form_wd_2 {
+        width: 60%;
+    }
+
+    .form_wd_3 {
+        width: 90%;
+    }
+
+    .form_wd_4 {
+        width: 90%;
+    }
+
+    .form_wd_5 {
+        width: 90%;
+    }
+
+    .form_wd_6 {
+        width: 90%;
+    }
+
+    .form_wd_7 {
+        width: 90%;
+    }
+
+    .form_wd_8 {
+        width: 90%;
+    }
+
+    .form_wd_9 {
+        width: 90%;
+    }
+
+    .form_wd_10 {
+        width: 100%;
+    }
+
+
+    // チャット
+    .message_icon {
+      width: 36px; 
+      height: 36px; 
+    }
+
+    .message_username {
+      width: 36px;
+      top: 40px;
+      font-size: 8px; 
+    }
+
+    .message_side-left {
+      margin: 0 0 30px 64px;
+    }
+
+    .message_side-right {
+      margin: 0 64px 30px 0;
+    }
+
+
+    #sidebar{
+      display: block;
+      position: absolute;
+      z-index: 100;
+      margin:0;
+      padding-top:20px;
+    }
+
+    .batsu{
+      display: inline-block;
+      background-color:$white;
+    }
+
+    .tab_item {
+      width: calc(100%/3);
+    }
+
+    #login_box{
+      width: 90%;
+    }
+
+    // グラフ
+
+    .graph{
+      width: 100%;
+    }
+
+
+
+
+
+}

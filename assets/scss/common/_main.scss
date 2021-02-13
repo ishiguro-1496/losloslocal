@@ -1,0 +1,45 @@
+body{
+    background-color:$bg_color;
+    box-sizing:border-box;
+}
+
+
+#main{
+    width: 100%;
+  // padding:0% 2% 0% 2%; 
+    overflow: scroll;
+    height: 100vh;
+
+}
+
+#page_title{
+  width: 96%;
+  margin: 18px 2%;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom:18px;
+  border-bottom:$gray 1px solid;
+}
+
+
+#main_contents{
+    width: 92%;
+    margin: 0 2% 0 2%;
+    padding:2%;
+    @include shadow;
+    @include r;
+    background-color: $white;
+}
+
+
+#user_main_contents{
+
+  width: 96%;
+  margin: 4% 2% 0 2%;
+  // padding:2%;
+
+
+}
+
+
+

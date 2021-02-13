@@ -1,0 +1,184 @@
+// ダッシュボード
+
+
+
+#dashboard_area{
+    width: 92%;
+    margin: 0 2% 0 2%;
+    padding:2%;
+    // @include shadow;
+    // @include r;
+    // background-color: $white;
+}
+
+
+
+
+
+
+#dashboard_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#dashboard_subtitle{
+    padding:10px 0px;
+    font-weight: normal;
+}
+
+#dashboard_search{
+    display: flex;
+    input{
+        flex-basis: 14%;
+        margin: 1% 2%;
+    }
+    img{
+        margin: 1% 2%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding:10px;
+        @include shadow;
+    }
+
+}
+
+
+#dashboard_box{
+	margin: 1% 2%;
+    padding: 1% 2%;
+    flex-basis: 24%;
+    // height: auto;
+    background-color: #fff;
+    @include shadow;
+    border-radius: 10px;
+    &:hover{
+        @include hover_shadow;
+    }
+    a{
+        text-decoration: none;
+        color:$black;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding:2px 0px;
+
+        }
+    }
+}
+
+#dashboard_title{
+    border-bottom:dashed $gray 1px;
+    svg{
+        fill:$purple;
+        width: 18px;
+        height:auto;
+        padding:6px;
+        border-radius:50%;
+        @include shadow;
+    }
+}
+
+#dashboard_contents{
+    span{
+        font-size: 14px;
+    }
+    p{
+        color:$purple;
+        font-size:20px;
+        span{
+            color:$midgray;
+            font-size: 12px;
+            margin-left:4px;
+        }
+    }
+}
+
+
+// ーーーーーUser側ーーーーー
+
+
+
+#user_dashboard_block{
+    display: flex;
+    border-radius: 10px;  
+    justify-content: flex-start; 
+    flex-wrap:wrap;
+}
+
+#user_dashboard_box{
+    display: flex;
+    margin: 1% 1% 14px 1%;
+    padding: 4% 2%;
+    flex-basis:44%;
+    background-color: #fff;
+    border-radius: 10px;  
+    position: relative; 
+    a{
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        align-items:center;
+        color:$black;
+        width: 100%;
+        svg{
+            margin: 2% 0%; 
+            fill:$white;
+            margin-right: 12px;
+            width: 24px;
+            height:auto;
+            padding:6px;
+            border-radius:50%;
+            // background-color:$gray;
+        }
+        div{
+            
+            p{
+                margin: 2% 0%; 
+                display: block;
+                font-size: 10px;
+
+             }
+
+             h2{
+                margin-top:8px;
+
+             }
+
+        }
+
+
+     } 
+}
+
+#notification_number{
+    position:absolute;
+    border-radius:50%;
+    right: -6px;
+    top: -6px;
+    background-color:red;
+    width: 18px;
+    height:18px;
+    font-size: 8px;
+    text-align: center;
+    color:$white;
+    margin: auto;
+    line-height: 16px;
+}
+
+#icon_profit{
+    background-color:$green;
+
+}
+
+#icon_point{
+    background-color:$skyblue;
+}
+#icon_food{
+    background-color:$orange;
+}

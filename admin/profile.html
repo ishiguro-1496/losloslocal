@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/admin.js"></script>
+</head>
+<body>
+
+
+  <div id="container">
+    <div id="sidebar"></div>
+
+    <!-- メイン -->
+    <div id="main"> 
+      <div id="header"></div>
+      <h1 id="page_title">マイページ</h1>
+      <div id="main_contents">
+          <div id="tabs">
+<!--             <div id="tab_label">  -->
+              <input id="left_panel" type="radio" name="tab_item" checked>
+              <label class="tab_item" for="left_panel">プロフィール設定</label>
+              <input id="right_panel" type="radio" name="tab_item">
+              <label class="tab_item" for="right_panel">パスワード設定</label>
+            <!-- </div> -->
+          <form class="form-horizontal tab_content" id="left_panel_content">
+          <fieldset>
+            <div class="form_block">
+              <label class="form_label required">名前</label>
+              <div class="form_wd_2">
+                <input type="text" placeholder="" class="form_input" required="">
+              </div>
+            </div>
+            <div class="form_block">
+              <label class="form_label">アイコン</label>
+              <div class="form_wd_2">
+                <input id="filebutton" class="input-file" type="file">
+              </div>
+            </div>
+            <div class="form_block">
+              <label class="form_label required">一言</label>
+              <div class="form_wd_2">
+                <input type="text" placeholder="" class="form_input" required="">
+              </div>
+            </div>
+
+            <div class="form_block">
+              <div class="form_wd_4">
+                <span onclick="history.back()" class="back_btn" type="button">戻る</span>
+                 <button class="update_btn btn" type="button">更新</button>
+              </div>
+            </div>
+
+          </fieldset>
+          </form>
+
+          <form class="form-horizontal tab_content" id="right_panel_content">
+          <fieldset>
+            <div class="form_block">
+              <label class="form_label required">現在のパスワード</label>
+              <div class="form_wd_2">
+                <input type="text" placeholder="" class="form_input" required="">
+              </div>
+            </div>
+            <div class="form_block">
+              <label class="form_label required">新しいパスワード</label>
+              <div class="form_wd_2">
+                <input type="text" placeholder="" class="form_input" required="">
+              </div>
+            </div>
+            <div class="form_block">
+              <label class="form_label required">新しいパスワード（確認用）</label>
+              <div class="form_wd_2">
+                <input type="text" placeholder="" class="form_input" required="">
+              </div>
+            </div>
+            <div class="form_block">
+              <div class="form_wd_4">
+                <span onclick="history.back()" class="back_btn">戻る</span>
+                 <button class="update_btn btn" type="button">更新</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+          <button onclick="location.href='login.html'" class="logout_btn btn" type="button">ログアウト</button>
+          </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+   
+</body>
+</html>
