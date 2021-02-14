@@ -275,8 +275,6 @@
 }
 
 
-
-
 // グラフ
 
 .graph{
@@ -285,6 +283,36 @@
   margin: auto 0;
   overflow-x:scroll;
 }
+
+
+//　User
+
+
+
+.user_form_area{
+  width: 96%;
+  padding:0 2%;
+  background-color:$white;
+  height: 100vh;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+
+.profile_form_area{
+  width: 92%;
+  padding:0 4%;
+  background-color:$white;
+  height: 100vh;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+
 
 
 

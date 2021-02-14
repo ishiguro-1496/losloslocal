@@ -487,18 +487,19 @@ nav.pg_navi {
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    // height: auto;
+    height: auto;
 
 }
 
 
 #user_list_block{
     display: flex;
-    margin: 1% 2%;
+    margin: 2%;
     padding: 1% 2%;
     flex-basis: 24%;
     background-color: #fff;
     border-radius: 10px;   
+    @include shadow;
     a{
         display: flex;
         justify-content: flex-start;
@@ -617,8 +618,9 @@ nav.pg_navi {
 #current_point{
     text-align: center;
     // background: linear-gradient(-135deg, $bg_colo, $purple);
-    background-color:$lightskyblue;
+    background-color:$bg_color;
     // color:$white;
+    position:sticky;
     p{
         padding-top:14px;
 
@@ -632,6 +634,7 @@ nav.pg_navi {
 }
 
 #user_profile_block{
+    // margin: 0 2%;
 }
 
 
@@ -662,19 +665,22 @@ nav.pg_navi {
 
 #profile_top{
     text-align: center;
+    background-color:$bg_color;
     a{ 
         text-decoration: none;
         color:$black;
         align-items:center;
 
         span{
-          background-image:url("../assets/img/icon_7.jpeg");
-          width: 30px;
-          margin-right: 16px;
-          height: 30px;
+          display: block;
+          background-image:url("../img/icon_7.jpeg");
+          width: 60px;
+          height: 60px;
+          margin: 0 auto;
           border-radius:50%;
           background-position: center;
           background-size:cover;
+          @include shadow;
         }
 
         h2{

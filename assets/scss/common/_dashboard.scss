@@ -119,6 +119,7 @@
     background-color: #fff;
     border-radius: 10px;  
     position: relative; 
+    @include shadow;
     a{
         display: flex;
         justify-content: flex-start;
@@ -172,7 +173,7 @@
 }
 
 #icon_profit{
-    background-color:$green;
+    background-color:$magenta;
 
 }
 

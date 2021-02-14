@@ -3,9 +3,9 @@
     text-align: center;
     padding:12px 0px;
     img{
-        width: 40%;
+        width: 36%;
         height: auto;
-        margin: 2% 30%;
+        margin: 2% 32%;
         @include r;  
     }
     p{
@@ -21,7 +21,7 @@
     // display: flex;
     // margin: 1% 2%;
     padding: 1% 2%;
-    background-color: #fff;
+    background-color: $white;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 0px;

@@ -1,3 +1,26 @@
+// 検索バー
+
+#search_form{
+  width: 100%;
+  position:relative;
+  svg{
+    position:absolute;
+    right: 18px;
+    top: 0;
+    bottom:0;
+    margin: auto;
+  }
+}
+
+.search_text{
+    font-size: 14px;
+    padding: 2% 4%;
+    width: 88%;
+    margin: 4% 2%;
+    border:none;
+    background-color:$gray;
+    @include r;
+}
 
 
 // タブ
@@ -148,6 +171,13 @@ input[name="tab_item"] {
   background-color:$white;
   font-size: 10px;
   @include r;
+}
+
+.food_apply_btn{
+  margin: 1% 2%;
+  margin-left:auto;
+  display: flex;
+  padding:6px;
 }
 
 // トグルスイッチ

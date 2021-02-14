@@ -1,5 +1,11 @@
 #container{
 	display: flex;
 	height: auto;
-	// background-color: $lightgray;
+	background-color: $bg_color;
+}
+
+#user_container{
+	display: flex;
+	height: auto;
+	background-color: $white;
 }
