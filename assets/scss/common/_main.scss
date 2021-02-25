@@ -6,12 +6,9 @@ body{
 
 #main{
     width: 100%;
-  // padding:0% 2% 0% 2%; 
     overflow: scroll;
     height: 100vh;
-    min-height: 100vh;
-    padding-bottom: 60px;
-    box-sizing: border-box;
+    @include bottom_height;
 
 }
 
@@ -40,8 +37,9 @@ body{
   width: 96%;
   margin: 2%;
   // padding:2%;
-
-
+  position: relative;
+  background-color:$bg_color;
+  height: 100vh;
 }
 
 

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/supplier.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="main"> 
+			<div id="header"></div>
+			<div id="glb_nav"></div>
+			<!-- <div id="user_main_contents"> -->
+				<div id="user_detail_top">
+					<img src="../assets/img/food_3.jpg">
+					<p>ハンバーガー</p>
+
+				</div>
+				<div id="user_detail_block" class="food_detail_block">
+					
+					<form class="user_form_area">
+						<fieldset>
+						  <div class="form_block">
+						    <label class="form_label">必要ポイント数</label>
+						    <div class="form_wd_2 input_inline">
+						    <p class="form_data" id="detail_text">200</p><span id="unit">pt</span>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">発送先倉庫</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">〇〇倉庫</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">受取ユーザー名</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">-</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">承認ステータス</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">承認済み</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">公開ステータス</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">公開中</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">倉庫受取ステータス</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">-</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">ユーザー受取ステータス</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">-</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">フードid</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">1</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">受け渡し証拠画像</label>
+						    <div class="form_wd_2">
+						    <div class="form_wd_2">
+			                  <input id="filebutton" class="input-file" type="file">
+			                 </div>
+						  </div>
+						  <div class="form_block">
+						    <div class="form_wd_4">
+						      <span onclick="history.back()" class="back_btn" type="button">戻る</span>
+						      <button onclick="location.href='#'" class="food_shipping_btn btn" type="button">フード受渡申請</button>
+						    </div>
+						  </div>
+						</fieldset>
+						</form>
+				</div>
+			<!-- </div> -->
+			<div id="footer"></div>
+		</div>
+	</div>
+</body>
+</html>

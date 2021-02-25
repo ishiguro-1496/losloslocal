@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="main"> 
+			<div id="header"></div>
+			<div id="glb_nav"></div>
+			<div id="user_main_contents">
+				<div id="search_section">
+				   <form action="food_list.html" method="GET" id="search_form">
+					   <input class="search_text" type="seach" placeholder="フード検索">
+					   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+					</form>
+					<svg id="tune_button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+				</div>
+				<div id="user_list">
+					<div id="user_list_block" class="food_list_block">
+						<a href="food_detail.html">
+							<img src="../assets/img/food_1.jpg">
+							<div id="user_list_box" class="food_list_box">
+								<h1>クレープ</h1>
+								<ul>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13 3H6v18h4v-6h3c3.31 0 6-2.69 6-6s-2.69-6-6-6zm.2 8H10V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z"/></svg>
+									    <p>200pt</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"></path></svg>
+									    <p>〇〇倉庫〇〇倉庫〇〇倉庫</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									    <span>受取予定</span>
+									</li>
+								</ul>
+							</div>	
+						</a>
+					</div>
+					<div id="user_list_block" class="food_list_block">
+						<a href="food_detail.html">
+							<img src="../assets/img/food_2.jpg">
+							<div id="user_list_box" class="food_list_box">
+								<h1>ブロッコリー</h1>
+								<ul>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13 3H6v18h4v-6h3c3.31 0 6-2.69 6-6s-2.69-6-6-6zm.2 8H10V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z"/></svg>
+									    <p>200pt</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"></path></svg>
+									    <p>-</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									    <span>受取済み</span>
+									</li>
+									
+								</ul>
+							</div>	
+						</a>
+					</div>
+					<div id="user_list_block" class="food_list_block">
+						<a href="food_detail.html">
+							<img src="../assets/img/food_3.jpg">
+							<div id="user_list_box" class="food_list_box">
+								<h1>ハンバーガー</h1>
+								<ul>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13 3H6v18h4v-6h3c3.31 0 6-2.69 6-6s-2.69-6-6-6zm.2 8H10V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z"/></svg>
+									    <p>200pt</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"></path></svg>
+									    <p>〇〇倉庫</p>
+									  <!-- </a> -->
+									</li>
+								</ul>
+							</div>	
+						</a>
+					</div>
+					<div id="user_list_block" class="food_list_block">
+						<a href="food_detail.html">
+							<img src="../assets/img/food_4.jpg">
+							<div id="user_list_box" class="food_list_box">
+								<h1>ヌードル</h1>
+								<ul>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13 3H6v18h4v-6h3c3.31 0 6-2.69 6-6s-2.69-6-6-6zm.2 8H10V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z"/></svg>
+									    <p>200pt</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"></path></svg>
+									    <p>〇〇倉庫</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									    <span>受取予定</span>
+									</li>
+								</ul>
+							</div>	
+						</a>
+					</div>
+					<div id="user_list_block" class="food_list_block">
+						<a href="food_detail.html">
+							<img src="../assets/img/food_5.jpg">
+							<div id="user_list_box" class="food_list_box">
+								<h1>ケーキ</h1>
+								<ul>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13 3H6v18h4v-6h3c3.31 0 6-2.69 6-6s-2.69-6-6-6zm.2 8H10V7h3.2c1.1 0 2 .9 2 2s-.9 2-2 2z"/></svg>
+									    <p>200pt</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									  <!-- <a href="#"> -->
+									    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"></path></svg>
+									    <p>〇〇倉庫</p>
+									  <!-- </a> -->
+									</li>
+									<li>
+									    <span>受取済み</span>
+									</li>
+								</ul>
+							</div>	
+						</a>
+					</div>
+					
+				<nav class="pg_navi">
+				  	<div class="pagination">
+				    <a class="pg_number prev" href="#">prev</a>
+				    <span aria-current="page" class="pg_number current">1</span>
+				    <a class="pg_number" href="#">2</a>
+				    <a class="pg_number" href="#">3</a>
+				    <a class="pg_number" href="#">4</a>
+				    <a class="pg_number" href="#">5</a>
+				    <a class="pg_number" href="#">6</a>
+				    <a class="pg_number next" href="#">next</a>
+				  	</div>
+				</nav>
+			</div>
+			
+			<div id="footer"></div>
+		</div>
+	</div>
+	<div id="glb_nav"></div>
+</body>
+</html>

@@ -86,8 +86,6 @@ $(function() {
                    </div>
                  </div>`;
 
-
-
        $(document).on('click','.recommend_user_add_btn',function(){
            $("#recommend_user_area").append(recommend_user_block);
        });

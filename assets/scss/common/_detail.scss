@@ -7,6 +7,7 @@
         height: auto;
         margin: 2% 32%;
         @include r;  
+        @include shadow;
     }
     p{
         font-weight: bold;
@@ -15,20 +16,12 @@
     }
 }
 
-
-
 #user_detail_block{
-    // display: flex;
-    // margin: 1% 2%;
     padding: 1% 2%;
     background-color: $white;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    // position: relative;
+    @include top_r;
+    @include shadow;
     img{
-        // position:absolute;
         width: 80%;
         height: auto;
         margin: 2% 10%;

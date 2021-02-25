@@ -488,20 +488,23 @@ nav.pg_navi {
     flex-direction: column;
     overflow: scroll;
     height: auto;
+    @include bottom_height;
+
 
 }
 
 
 #user_list_block{
     display: flex;
-    margin: 2%;
-    padding: 1% 2%;
-    flex-basis: 24%;
+    margin: 2% 2% 14px 2%;
+    padding: 2%;
     background-color: #fff;
     border-radius: 10px;   
+    position:relative;
     @include shadow;
     a{
         display: flex;
+        width: 100%;
         justify-content: flex-start;
         text-decoration: none;
         color:$black;
@@ -512,21 +515,41 @@ nav.pg_navi {
             @include r;
         }
         div{
-            width: 76%;
+            width: 74%;
             margin: 2% 0% 2% 2%; 
         }
      } 
+
+    button{
+        position:absolute;
+        top:8px;
+        right: 8px;
+    }
 }
 
 .food_list_block{ 
+
 
 }
 
 
 
 #user_list_box{
+    position:relative;
     h1{
         margin-bottom:8px;
+        width: 80%;
+        font-size: 14px;
+    }
+    input{
+        position:absolute;
+        top:0;
+        right: 8px;
+    }
+    button{
+        position:absolute;
+        top:0;
+        right: 8px;
     }
     ul{
         list-style: none;
@@ -536,14 +559,14 @@ nav.pg_navi {
             margin: 4px 0px;
             // a{
                 svg{
-                 fill: $midgray;
+                 fill: $madgray;
                  margin-right: 6px;
                  width: 14px;
                  height: auto;
 
                 }
                 p{
-                    color:$midgray;
+                    color:$madgray;
                     font-size: 12px;
 
                 }
@@ -552,33 +575,41 @@ nav.pg_navi {
                     background-color:$white;
                     padding :6px 8px;
                     margin: 8px 8px 0px 0px;
-                    color:$main_color;
-                    border:1px solid $main_color;
+                    color:$purple;
+                    border:1px solid $purple;
                     border-top-left-radius: 4px;
                     border-top-right-radius: 4px;
                     border-bottom-left-radius: 4px;
-                    border-bottom-right-radius: 4px;
-
-
- 
-                }
-             
+                    border-bottom-right-radius: 4px; 
+                }    
         }
     }
 }
 
+.work_list_box{
+
+}
 
 #user_point_block{
+    padding: 1% 2%;
+    background-color: $white;
+    @include top_r;
+    @include shadow;
+    margin-top: 12px;
     h1{
         text-align: center;
         background-color:$white;
         padding:10px 0px;
-        border-bottom:1px solid $skyblue;
+        margin: 0px 10px;
+        border-bottom:1px solid $purple;
     }
 
     p{
         text-align: center;
-        padding:16px 0px;
+        padding:4px 0px;
+        margin: 0px 10px;
+        background-color:$lightgray;
+        font-size: 12px;
     }
 }
 
@@ -611,43 +642,43 @@ nav.pg_navi {
             text-align: left;
             margin:10px; 
             font-size: 14px;
+            background-color:$white;
         }
     }
 }
 
 #current_point{
     text-align: center;
-    // background: linear-gradient(-135deg, $bg_colo, $purple);
     background-color:$bg_color;
-    // color:$white;
     position:sticky;
     p{
-        padding-top:14px;
+        padding-top:12px;
 
     }
     h2{
         font-size: 24px;
-        padding:14px;
+        padding:12px 0px 12px 0px;
 
     }
 
 }
 
-#user_profile_block{
-    // margin: 0 2%;
+#user_profile_block{ 
+
 }
 
 
 #user_profile_box{
-    background-color:$white;
+
     a{
-        margin: 0px 10px;
+        padding: 0px 10px;
         border-bottom:1px solid $gray;
         display:flex;
         text-decoration:none;
         color:$black;
         justify-content: space-between;
         align-items:center;
+        background-color:$white;
         svg{
             margin: 10px; 
             fill:$black;
@@ -673,7 +704,6 @@ nav.pg_navi {
 
         span{
           display: block;
-          background-image:url("../img/icon_7.jpeg");
           width: 60px;
           height: 60px;
           margin: 0 auto;

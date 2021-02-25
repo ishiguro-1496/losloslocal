@@ -14,8 +14,6 @@
 
 
 
-
-
 #dashboard_block{
     width: 100%;
     display: flex;
@@ -113,7 +111,7 @@
 
 #user_dashboard_box{
     display: flex;
-    margin: 1% 1% 14px 1%;
+    margin: 2% 1% 14px 1%;
     padding: 4% 2%;
     flex-basis:44%;
     background-color: #fff;
@@ -174,7 +172,6 @@
 
 #icon_profit{
     background-color:$magenta;
-
 }
 
 #icon_point{
@@ -182,4 +179,8 @@
 }
 #icon_food{
     background-color:$orange;
+}
+
+#icon_work{
+    background-color:$navy;
 }

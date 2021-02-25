@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/warehouse.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="main"> 
+			<!-- <div id="header"></div> -->
+			<div id="header_logout">
+				<div id="header_logout_left">
+				</div>
+				<div id="header_logout_right">
+					<a href="login.html">
+						<p>ログアウト</p>
+					</a>
+				</div>
+			</div>
+			<div id="glb_nav"></div>
+			<!-- <div id="user_main_contents"> -->
+				<div id="user_profile_block" class="supplier_profile_block">
+					<form class="profile_form_area">
+						<fieldset>
+						  <div class="form_block">
+						    <label class="form_label">銀行名</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">〇〇銀行</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">口座種別</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">普通預金</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">支店コード</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">123</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">口座番号</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">1234567</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">口座名義（セイ）</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">ヤマダ</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">口座名義（メイ）</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">タロウ</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <div class="form_wd_4">
+						      <span onclick="history.back()" class="back_btn" type="button">戻る</span>
+						      <button onclick="location.href='bank_info_edit.html'" id="list_btn" type="button">編集</button>
+						    </div>
+						  </div>
+						</fieldset>
+						</form>
+				</div>
+			<!-- </div> -->
+			<div id="footer"></div>
+		</div>
+	</div>
+</body>
+</html>

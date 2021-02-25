@@ -40,6 +40,22 @@ $(function() {
       });
     });
 
+      $(".bank_info_update_btn").click(function(){
+      Swal.fire({
+        type:"success",
+        title: "口座情報を更新しました",
+        confirmButtonText: '<a href="account.html" style="color:white; text-decoration:none;">戻る</a>'
+      });
+    });
+
+      $(".food_shipping_btn").click(function(){
+      Swal.fire({
+        type:"success",
+        title: "受渡申請が完了しました",
+        confirmButtonText: '<a href="food_list.html" style="color:white; text-decoration:none;">フード一覧へ</a>'
+      });
+    });
+
 
 
 

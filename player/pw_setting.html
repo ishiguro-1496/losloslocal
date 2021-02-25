@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="main"> 
+			<!-- <div id="header"></div> -->
+			<div id="header_logout">
+				<div id="header_logout_left">
+				</div>
+				<div id="header_logout_right">
+					<a href="login.html">
+						<p>ログアウト</p>
+					</a>
+				</div>
+			</div>
+			<div id="glb_nav"></div>
+			<!-- <div id="user_main_contents"> -->
+				<div id="user_profile_block" class="supplier_profile_block">
+					<form class="profile_form_area">
+						<fieldset>
+						  <div class="form_block">
+						    <label class="form_label">現在のパスワード</label>
+						    <div class="form_wd_4 input_inline">
+			                <input type="password" placeholder="" class="form_input" required="">
+			                </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">新しいパスワード</label>
+						    <div class="form_wd_4 input_inline">
+			                <input type="password" placeholder="" class="form_input" required="">
+			                </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">新しいパスワード（確認用）</label>
+						    <div class="form_wd_4 input_inline">
+			                <input type="password" placeholder="" class="form_input" required="">
+			                </div>
+						  </div>
+						  <div class="form_block">
+						    <div class="form_wd_4">
+						      <span onclick="history.back()" class="back_btn" type="button">戻る</span>
+						      <button onclick="location.href='#'" class="pw_update_btn btn" type="button">更新</button>
+						    </div>
+						  </div>
+						</fieldset>
+						</form>
+				</div>
+			<!-- </div> -->
+			<div id="footer"></div>
+		</div>
+	</div>
+</body>
+</html>

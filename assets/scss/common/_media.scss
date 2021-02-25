@@ -164,39 +164,39 @@
 
     // ページネーション
 
-.pg_navi .pg_number {
-    display: none;
-    border-radius: 50%;
-    }
-    .pg_navi .pg_number:nth-of-type(2) {
-    position: relative;
-    padding-right: 20px;
-    }
-    .pg_navi .pg_number:nth-of-type(2)::after {
-    font-size: 12px;
-    position: absolute;
-    top: 0;
-    left: 30px;
-    content: '...';
-    }
-    .pg_navi .pg_number:nth-child(-n+3),
-    .pg_navi .pg_number:nth-last-child(-n+3) {
-        display: block;
-    }
-    .pg_navi .pg_number:nth-last-child(-n+4) {
-        padding: 0 5px;
-    }
-    .pg_navi .pg_number:nth-last-child(-n+4)::after {
-        content: none;
-    }
-    .pg_navi .pg_number:hover,
-    .pg_navi .pg_number.current {
-        border-radius: 50%;
-    }
-    .pg_navi .pg_number.prev:hover,
-    .pg_navi .pg_number.next:hover {
-        border-radius: 50%;
-    }
+// .pg_navi .pg_number {
+//     display: none;
+//     border-radius: 50%;
+//     }
+//     .pg_navi .pg_number:nth-of-type(2) {
+//     position: relative;
+//     padding-right: 20px;
+//     }
+//     .pg_navi .pg_number:nth-of-type(2)::after {
+//     font-size: 12px;
+//     position: absolute;
+//     top: 0;
+//     left: 30px;
+//     content: '...';
+//     }
+//     .pg_navi .pg_number:nth-child(-n+3),
+//     .pg_navi .pg_number:nth-last-child(-n+3) {
+//         display: block;
+//     }
+//     .pg_navi .pg_number:nth-last-child(-n+4) {
+//         padding: 0 5px;
+//     }
+//     .pg_navi .pg_number:nth-last-child(-n+4)::after {
+//         content: none;
+//     }
+//     .pg_navi .pg_number:hover,
+//     .pg_navi .pg_number.current {
+//         border-radius: 50%;
+//     }
+//     .pg_navi .pg_number.prev:hover,
+//     .pg_navi .pg_number.next:hover {
+//         border-radius: 50%;
+//     }
 
 
     // 入力ページ
@@ -277,7 +277,7 @@
 
 
     #sidebar{
-      display: block;
+      display: none;
       position: absolute;
       z-index: 100;
       margin:0;

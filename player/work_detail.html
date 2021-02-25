@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script> 
+  <script type="text/javascript" src="../assets/js/player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="main"> 
+			<div id="header"></div>
+			<div id="glb_nav"></div>
+			<!-- <div id="user_main_contents"> -->
+				<div id="user_detail_top">
+					<p>”xx”の検索</p>
+
+				</div>
+				<div id="user_detail_block" class="food_detail_block">
+					<form class="user_form_area">
+						<fieldset>
+						  <div class="form_block">
+						    <label class="form_label">お題詳細</label>
+						    <div class="form_wd_2 input_inline">
+						    <p class="form_data" id="detail_text">”xx”を10回検索してください。</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">獲得ポイント数</label>
+						    <div class="form_wd_2 input_inline">
+						    <p class="form_data" id="detail_text">100</p><span id="unit">pt</span>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <label class="form_label">id</label>
+						    <div class="form_wd_2">
+						    <p class="form_data" id="detail_text">1</p>
+						    </div>
+						  </div>
+						  <div class="form_block">
+						    <div class="form_wd_4">
+						      <span onclick="history.back()" class="back_btn" type="button">戻る</span>
+						      <button onclick="location.href='work_upload.html'" id="list_btn" type="button">完了証拠アップロード</button>
+						    </div>
+						  </div>
+						</fieldset>
+					</form>
+				</div>
+			<!-- </div> -->
+			<div id="footer"></div>
+		</div>
+	</div>
+</body>
+</html>
